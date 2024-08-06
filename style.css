@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/miama');
+                
+
 /* Shared style */
 
 .bold-text{
@@ -23,8 +26,8 @@ body{
 /* Header Styling */
 header{
     height: 715px;
-    width: auto;
-    background: linear-gradient(to bottom, #111111, #282828, #111111);
+    width: 0 auto;
+    background: linear-gradient(to bottom, #000000, #282828, #000000);
     
 }
 
@@ -74,10 +77,16 @@ header{
 .header-title{
     font-size: 4rem;
     color: white;
-    font-weight: bold;
+    font-weight:900;
     width: 50%;
     margin-left: 20%;
     padding-bottom: 30px;
+}
+
+.shape{
+    font-family: miama;
+    font-size: 7rem;
+    font-weight: 200;
 }
 
 .header-description{
@@ -112,4 +121,235 @@ header{
     width: 255px;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.header-image > img{
+    width: 110%;
+    height: 84.5%;
+}
+
+
+.full-body{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 100px;
+}
+
+/* Habits Related Styling */
+
+.sec-habits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.habits-cards{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin: 0px auto;
+    gap: 50px;
+}
+
+.habits-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0px auto;
+}
+.habits-title{
+    margin: 0px auto;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.habits-description{
+    margin: 0px auto;
+    font-size: 0.8rem;
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.habits-img{
+    border: 5px solid #282828 ;
+    border-radius: 50%;
+    align-items: center;
+}
+
+
+.habits-card-title{
+    margin: 0px auto;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.habits-card-description{
+    margin: 0px auto;
+    font-size: 0.8rem;
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* Run section Styling */
+
+.sec-run{
+    display: flex;
+    gap: 50px;
+    background-color: rgba(75, 75, 75, 0.5);
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.run-box{
+
+}
+
+.run-img{
+    height: 312px;
+    width: 366px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.run-box-title{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 300px;
+    padding: 20px;
+}
+
+.run-box-description{
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    padding: 20px;
+}
+
+.btn-3{
+    background-color: #E6533C;
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 40px;
+    height: 55px;
+    width: 255px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.team-title{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-description{
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+}
+
+.team-images{
+    background-color: ;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    background-color: rgba(75, 75, 75, 0.5);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+.team-img{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+/* Footer Styling */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(19, 19, 19);
+    display: flex;
+    margin: 0px auto;
+    padding: 100px;
+}
+
+.f-brand-title{
+    font-size: 4rem;
+    color: #E6533C;
+    font-style: italic;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.f-brand-description{
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 120%;
+}
+
+.f-service{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+}
+
+.f-service > ul > li{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-left: 130px;
+    list-style: none;
+}
+
+.copyright{
+    background: rgb(19, 19, 19);
+    border-top: 10px solid rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
 }
