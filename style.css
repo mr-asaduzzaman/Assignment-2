@@ -47,6 +47,7 @@ header{
     font-style: italic;
 }
 
+
 .menu{
     display: none;
 }
@@ -119,6 +120,7 @@ header{
     font-size: 1rem;
     font-weight: 600;
     margin-left: 20%;
+    cursor: pointer;
 }
 
 .btn-2{
@@ -131,6 +133,7 @@ header{
     width: 255px;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .header-image > img{
@@ -270,6 +273,7 @@ header{
     color: #FFFFFF;
     font-size: 1rem;
     margin: 20px;
+    cursor: pointer;
 }
 
 .team-title{
@@ -377,26 +381,31 @@ header{
     .menu{
         height: 10%;
         width: 10%;
+        display: block;
     }
     .header-section{
         flex-direction: column;
     }
     .header-title, .header-description, .btn-1{
-        margin: 0%;
+        margin: 10%;
     }
     .header-image > img{
         width: 90%;
         height: 84.5%;
     }
     .btn-1{
-        margin-left: 0%
+        margin-left: 10%
+    }
+
+    .btn-2{
+        margin-left: 10%
     }
 
     .full-body{
-        padding: 0px;
+        padding: 10px;
     }
     .sec-habits{
-        margin-top: 900px;
+        margin-top: 1200px;
     }
     .sec-habits, .habits-cards, .sec-run{
         flex-direction: column;
@@ -423,4 +432,13 @@ header{
         margin-left: 5px;
         padding-bottom: 5px;
     }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1440px) {
+
+    .menu{
+        display: none;
+    }
+
 }
