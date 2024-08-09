@@ -314,6 +314,113 @@ header{
 }
 
 
+/* BMI Calculator Styling */
+.bmi-sec-title{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 200px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.bmi-sec-description{
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    padding-left: 200px;
+    margin-bottom: 50px;
+}
+
+
+
+.bmi-form-description{
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight:400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.bmi-container{
+    display: flex;
+    background: rgb(26, 26, 26);
+    border-radius: 10px;
+    padding: 30px;
+    color: #282828;
+
+}
+
+.bmi-chart{
+    width: 80%;
+}
+
+.bmi-form{
+    width: 120%;
+}
+.bmi-chart-title, .bmi-form-title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    ;
+}
+
+table, td, th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 40px;
+
+  }
+
+  th{
+    color: #FFFFFF;
+  }
+
+
+
+  input[type=text], select, option{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgb(75, 75, 75), rgb(49, 49, 49));
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  ::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  #age, #sex{
+    width: 50%;
+  }
+  .flexMama{
+    display: flex;
+    gap: 10px;
+  }
+
+
 /* Footer Styling */
 .footer{
     display: flex;
