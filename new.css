@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+/* Resetting default margins and paddings */
+body, html, .full-body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Typography */
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold-text {
+    font-weight: bolder;
+}
+
+/* Flexbox utilities */
+.display-flex {
+    display: flex;
+}
+
+/* Header Styling */
+header {
+    height: 715px;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #282828, #000000);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.brand {
+    font-size: 2.2rem;
+    color: #E6533C;
+    font-style: italic;
+}
+
+.menu {
+    display: none;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    color: aliceblue;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-home {
+    background-color: #E6533C;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+/* Header section */
+.header-section {}
+
+.header-title {
+    font-size: 4rem;
+    line-height: 60px;
+    color: white;
+    font-weight: 900;
+    width: 50%;
+    margin-left: 20%;
+    padding: 50px 0 30px 0;
+}
+
+.shape {
+    font-family: miama;
+    font-size: 7rem;
+    font-weight: 200;
+}
+
+.header-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    width: 50%;
+    margin-left: 20%;
+    padding-bottom: 30px;
+}
+
+.btn-1, .btn-2 {
+    border-radius: 40px;
+    height: 55px;
+    width: 255px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #E6533C;
+    padding: 15px 35px;
+    border: 0px;
+    color: #FFFFFF;
+    margin-left: 20%;
+}
+
+.btn-2 {
+    padding: 15px 35px;
+    background-color: #111111;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+}
+
+.header-image > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Body section */
+.full-body {
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 100px;
+}
+
+/* Habits Section */
+.sec-habits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.habits-cards {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    gap: 50px;
+}
+
+.habits-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0px auto;
+}
+
+.habits-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.habits-description, .habits-card-description {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.habits-card-title {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.habits-img {
+    border: 5px solid #282828;
+    border-radius: 50%;
+    align-items: center;
+}
+
+/* Run section */
+.sec-run {
+    display: flex;
+    gap: 50px;
+    background-color: rgba(75, 75, 75, 0.5);
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.run-box {}
+
+.run-img {
+    height: auto;
+    width: 100%;
+    max-width: 366px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.run-box-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.run-box-description {
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    padding: 20px;
+}
+
+.btn-3 {
+    background-color: #E6533C;
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 40px;
+    height: 55px;
+    width: 255px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* Team section */
+.team-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-description {
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(75, 75, 75, 0.5);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header-title, .header-description, .btn-1, .btn-2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-description, .run-box-description {
+        width: 90%;
+    }
+
+    .sec-habits, .full-body, .sec-run {
+        padding: 50px;
+    }
+
+    .habits-description, .habits-card-description {
+        width: 70%;
+    }
+
+    .team-description {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-title, .header-description, .btn-1, .btn-2, .run-box-title, .run-box-description {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .sec-habits, .full-body, .sec-run {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .habits-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .run-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .btn-1, .btn-2, .btn-3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sec-habits, .full-body, .sec-run {
+        padding: 10px;
+    }
+}

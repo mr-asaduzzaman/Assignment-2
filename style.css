@@ -2,9 +2,12 @@
 
 @import url('https://fonts.cdnfonts.com/css/miama');
                 
-
+*{
+    padding: 0;
+    margin: 0;
+}
 /* Shared style */
-body, html {
+body, html, .full-body{
     margin: 0;
     padding: 0;
 }
@@ -22,6 +25,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 
@@ -78,10 +82,88 @@ header{
     padding: 5px 15px;
     border-radius: 50px;
 }
-
 .header-section{
   
 }
+
+
+.videos{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #303030;
+    height: 100px;
+    width: 195px;
+    border-radius: 10px;
+    transform: translateX(150px) translateY(-400px);
+
+}
+
+.v-title{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+
+.v-description{
+    font-size: 1rem;
+    color: rgb(121, 121, 121);
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+
+.tutorial{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #303030;
+    height: 100px;
+    width: 195px;
+    border-radius: 10px;
+    transform: translateX(-100px) translateY(-350px);
+
+}
+.t-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crcl{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid white;
+    margin: 10px;
+}
+
+.t-title{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+}
+
+.t-description{
+    font-size: 1rem;
+    color: rgb(169, 169, 169);
+    font-weight: 400;
+    padding-left: 20px;
+}
+
 
 .header-title{
     font-size: 4rem;
@@ -121,7 +203,13 @@ header{
     font-weight: 600;
     margin-left: 20%;
     cursor: pointer;
+    
 }
+.btn-1:hover{
+    background-color: firebrick;
+
+}
+
 
 .btn-2{
     padding: 15px 35px;
@@ -148,7 +236,7 @@ header{
     flex-direction: column;
     justify-content: center;
     margin: 0px auto;
-    padding: 100px;
+    padding: 0px;
 }
 
 /* Habits Related Styling */
@@ -159,13 +247,13 @@ header{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
+    margin-top: 100px;
 }
 .habits-cards{
     display: flex;
     justify-content: space-around;
     align-self: center;
-    margin: 0px auto;
     gap: 50px;
 }
 
@@ -478,6 +566,9 @@ table, td, th {
 
 
 @media screen and (max-width: 576px) {
+    body{
+        overflow-x:visible;
+    }
     .navbar{
         padding-top: 10px;
         padding-left: 5px;
@@ -507,10 +598,6 @@ table, td, th {
     .btn-2{
         margin-left: 10%
     }
-
-    .full-body{
-        padding: 10px;
-    }
     .sec-habits{
         margin-top: 1200px;
     }
@@ -539,7 +626,36 @@ table, td, th {
         margin-left: 5px;
         padding-bottom: 5px;
     }
+
+    .bmi-container{
+        flex-direction: column;
+    }
+    .bmi-sec-title{
+        padding-left: 20px;
+    }
+    .bmi-sec-description{
+        padding-left: 5px;
+        width: 500px;
+    }
+    .flexMama{
+        width: 80%;
+    }
+    .activity{
+        width: 80%;
+        background-color: red;
+    }
+    body, html, .full-body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
+    }
 }
+
 
 
 @media screen and (min-width: 576px) and (max-width: 1440px) {
